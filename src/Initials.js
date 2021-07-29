@@ -1,0 +1,17 @@
+function getInitials (string) {
+    let names = string.split(' '),
+        initials = names[0].substring(0, 1).toUpperCase();
+    
+    if (names.length > 1) {
+        initials += names[names.length - 1].substring(0, 1).toUpperCase();
+    }
+    return initials;
+};
+
+function randomNumbers (min, max){
+    return Math.floor(min + Math.random() * (max - min))}
+
+
+
+
+export {getInitials, randomNumbers}
